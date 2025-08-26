@@ -6,11 +6,11 @@ SPDX-License-Identifier: EUPL-1.2
 from constellation.core.logging import setup_cli_logging
 from constellation.core.satellite import SatelliteArgumentParser
 
-from .Template import Template
+from .TempMon import TempMon
 
 
 def main(args=None):
-    """Template satellite"""
+    """TempMon satellite"""
 
     # Get a dict of the parsed arguments
     parser = SatelliteArgumentParser(description=main.__doc__)
@@ -20,7 +20,7 @@ def main(args=None):
     setup_cli_logging(args.pop("level"))
 
     # Start satellite with remaining args
-    s = Template(**args)
+    s = TempMon(**args)
     s.run_satellite()
 
 
