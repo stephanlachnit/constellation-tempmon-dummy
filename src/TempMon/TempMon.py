@@ -13,7 +13,7 @@ class TempMon(Satellite):
     _time_to_throw: float | int
 
     def do_initializing(self, config: Configuration) -> str:
-        self._time_to_throw = config.setdefault("time_to_throw", 60)
+        self._time_to_throw = config.setdefault("time_to_throw", 10)
         return "Initialized"
 
     def do_run(self, run_identifier: str) -> str:

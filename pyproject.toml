@@ -6,10 +6,10 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "TempMonSatellite"
+name = "constellation-demo-satellites"
 version = "0.0.1"
 authors = [{name = "Constellation Authors"}]
-description = "TempMon Satellite for Constellation"
+description = "Constellation satellites for demos"
 readme = "README.md"
 license = {text = "EUPL-1.2"}
 classifiers = [
@@ -32,10 +32,10 @@ dependencies = [
 
 [project.scripts]
 SatelliteTempMon = "TempMon.__main__:main"
+SatelliteCaribou = "Caribou.__main__:main"
 
 [project.urls]
-Homepage = "TODO"
-Repository = "TODO"
+Repository = "https://github.com/stephanlachnit/constellation-demo-satellites"
 
 [project.optional-dependencies]
 dev = [
